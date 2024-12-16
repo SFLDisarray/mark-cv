@@ -1,0 +1,159 @@
+.project {
+  background-color: var(--first-color);
+  border: 3px solid var(--third-color);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: var(--third-color);
+  font-weight: 600;
+}
+
+.project p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.project ul {
+  font-size: 18px;
+  list-style-type: square;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.project a {
+  color: var(--second-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project .project-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project .project-footer .project-date {
+  font-size: 14px;
+  color: var(--fourth-color);
+}
+
+.project .project-footer .view-more {
+  font-size: 16px;
+  color: var(--third-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project .project-footer .view-more:hover {
+  color: var(--second-color);
+}
+
+.project ul li {
+  color: var(--third-color);
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--second-color);
+}
+
+@media (max-width: 1200px) {
+  .project {
+    padding: 15px;
+  }
+
+  .project h2 {
+    font-size: 22px;
+  }
+
+  .project p {
+    font-size: 16px;
+  }
+
+  .project ul {
+    font-size: 16px;
+  }
+
+  .project .project-footer .project-date {
+    font-size: 12px;
+  }
+
+  .project .project-footer .view-more {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 10px;
+    margin: 15px 0;
+  }
+
+  .project h2 {
+    font-size: 20px;
+  }
+
+  .project p {
+    font-size: 15px;
+  }
+
+  .project ul {
+    font-size: 15px;
+  }
+
+  .project .project-footer .project-date {
+    font-size: 12px;
+  }
+
+  .project .project-footer .view-more {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .project h2 {
+    font-size: 18px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  .project ul {
+    font-size: 14px;
+  }
+
+  .project .project-footer .project-date {
+    font-size: 10px;
+  }
+
+  .project .project-footer .view-more {
+    font-size: 12px;
+  }
+}
